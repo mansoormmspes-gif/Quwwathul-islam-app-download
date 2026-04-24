@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
 import {
   motion,
   useScroll,
@@ -156,11 +157,11 @@ export default function LandingPage() {
             transition={{ duration: 0.6 }}
           >
             <motion.div
-              className="w-10 h-10 bg-[#064e3b] rounded-xl flex items-center justify-center shadow-lg"
+              className="w-10 h-10 rounded-xl overflow-hidden bg-white border border-gray-100 shadow-lg flex items-center justify-center"
               whileHover={{ rotate: 10, scale: 1.1 }}
               transition={{ type: 'spring', stiffness: 300 }}
             >
-              <span className="text-white font-bold text-xl">QI</span>
+              <Image src="/logo.png" alt="Quwwathul Islam Logo" width={36} height={36} className="object-contain" />
             </motion.div>
             <span className="font-bold text-xl tracking-tight text-[#064e3b]">Quwwathul Islam</span>
           </motion.div>
@@ -640,10 +641,10 @@ export default function LandingPage() {
           <div className="col-span-2">
             <div className="flex items-center gap-3 mb-6">
               <motion.div
-                className="w-9 h-9 bg-[#064e3b] rounded-xl flex items-center justify-center"
+                className="w-9 h-9 rounded-xl overflow-hidden bg-white border border-gray-100 flex items-center justify-center"
                 whileHover={{ rotate: 10 }}
               >
-                <span className="text-white font-bold text-sm">QI</span>
+                <Image src="/logo.png" alt="Quwwathul Islam Logo" width={32} height={32} className="object-contain" />
               </motion.div>
               <span className="font-bold text-xl tracking-tight text-[#064e3b]">Quwwathul Islam</span>
             </div>
