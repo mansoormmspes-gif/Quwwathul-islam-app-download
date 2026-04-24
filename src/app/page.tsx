@@ -674,7 +674,7 @@ export default function LandingPage() {
         </div>
         <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-gray-100 text-center text-gray-400 text-sm space-y-1">
           <p>© {new Date().getFullYear()} Quwwathul Islam Madrasa. All rights reserved.</p>
-          <p className="text-xs text-gray-300">Created by <span className="font-semibold text-gray-400">mde.bymms</span></p>
+          <p className="text-xs">Created by <span className="font-semibold">mde.bymms</span></p>
         </div>
       </motion.footer>
     </div>
